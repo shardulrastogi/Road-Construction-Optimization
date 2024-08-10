@@ -3,11 +3,9 @@
 ### Table Of Contents
 
 -  Abstract
--  Introduction
 -  Block Diagram
 -  Pseudo Code
 -  Output Screenshot
--  Conclusion
 
 
 ### 1. Abstract
@@ -32,50 +30,7 @@ require maximum resources needed for each road, amount of resources allotted for
 road, and available resources, based on which a safe sequence is generated that prevents
 any unwanted stoppage of work.
 
-
-### 2. Introduction
-
-In countries like India where we are seeing a steep rise in the overall population there arise a
-necessity of new habitat and scouring of vacant land to make new buildings, accommodations
-and environments which are connected by roads. As per the statistics we get to know that a
-total of 2098624 km of road was laid in India alone during the period 2001 to 2005 and these
-numbers are continuously rising with each passing year. So the maintenance and construction
-of new roads require a tremendous work force and attention from the government. So it
-becomes necessary to design a proper algorithm that can manage the overall process of road
-construction.
-
-So the first part of the project deals with the task of getting the parameters through which a
-road can be assigned a particular priority and accordingly can be used for further estimations
-and calculations. So for this purpose we consider 3 parameters associated with a particular
-road namely the size,utility and the traffic associated with each road . For the purpose of
-getting the road size we employ yet another renowned and precise algorithm known as
-Dijkstra algorithm to get the shortest road length
-
-Scheduling is one of the most widely used techniques to using which any operation involving
-several tasks can be ordered in such a way so that easy execution of the entire operation
-becomes possible in the most efficient way possible avoiding any sort of errors and
-confusions. The programme that does the task of scheduling is termed as a scheduler. Now
-the scheduling used in the project involves priority scheduling without the use of pre-
-emption(the reason for the same is explained in the later part of the project) ,So here the
-algorithm decides how to schedule the various construction processes in the given region
-based on their priorities , which in-turn is decided on the basis of various factors which are
-mentioned in the above paragraph of the project. So all the constructions will be handled
-accordingly.
-
-In the second part of the proposed work, We tried to focus on the very common issue of delay
-and stopping of the entire construction process due unavailability of various resources
-involved in the construction process so we compared this scenario with the dead-lock
-condition that arises in the operating systems while assigning resources to various running
-processes and this lead us to use the same algorithm that we use in operating systems that is
-the bankers algorithm for our project as well using various resources involved in the road
-construction process so as to avoid any condition of an absolute deadlock state in our
-construction process. The resources we use are discussed in later part of the project .So using
-this bankers algorithm we make sure that at no situation should occur where for the lack of
-required resources, all work gets stopped or hindered. So, the implementation of this
-algorithm becomes necessary. The safe sequence advices in what order to proceed so that by
-the available resources, all tasks can be completed.
-
-### 3. Block Diagram
+### 2. Block Diagram
 
 ![](Block_diagram.png)
 
@@ -104,7 +59,7 @@ for each road, amount of resources allotted for each road, and available resourc
 16) If sequence is not generated then an error message is displayed
 
 
-### 4. Pseudo Code
+### 3. Pseudo Code
 
 PSEUDO CODE FOR DIJAKSTRA FOR FINDING SHORTEST PATH FOR ROADS ->
 INPUTS AND ALGORITHM ->
@@ -259,7 +214,7 @@ CONSTRUCTION WITH THE AVAILABLE NO OF RESOURCES”.
 FOR SAFE COMPLETION OF ALL PROJECTS.
 
 
-### 5. Output Screenshots
+### 4. Output Screenshots
 
 OUTPUT-1 (Deadline compromised,Clash of priority,Safe sequence exists)
 
@@ -282,29 +237,3 @@ OUTPUT-2 (No Deadline issue, No Clash of priority,Safe sequence does not exist)
 ![](/Output_image/output(8).png)
 
 ![](/Output_image/output(9).png)
-
-
-### 6. Conclusion
-
-The proposed model is highly recommended as it successfully implements all the ideas that
-were initially put forth. The main purpose was to find out order in which a group of roads are
-mended or constructed so that within short time and correct resources, the roads are dealt
-with, without any ambiguity, prioritizing the important ones over the others. So in this way
-we get an ideal sequence for a large set of construction processes ongoing in the entire
-country which would not have been possible to deal with manually .The designed model is
-also able to find the most profitable route for the road construction whose map was given to
-us. By applying dijkstra algorithm to this map we were able to find the profitable route for
-construction .The model is also able to checks the safe sequence based on the data available
-to the authorities, whereby it says if the certain available resources is enough for the safe
-mending of all the given roads.
-
-
-Now we discuss that The reason to implement Priority Scheduling over the other methods is
-to ensure that the correct purpose is met and solved. In the given scenario, using other
-efficient algorithms like Shortest Job First is not feasible because the prior knowledge of
-every parameter is not sometimes possible because continuous damage of various other roads
-is possible in real life, and hence they will keep adding to the list making it impossible for
-roads of higher priorities to get completed. Also, the interruption of a going on task and
-resuming of others, while resuming the first one later is not possible in this scenario because
-an important road cannot wait forever once mending it has been started. The traffic and utility
-of that particular road does not allow it to wait for others. Hence, the best possible algorithm for the implementation was Priority Scheduling.
