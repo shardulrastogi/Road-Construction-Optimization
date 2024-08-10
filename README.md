@@ -1,4 +1,3 @@
-# Road-Construction-Optimization
 # Road Construction Using Highway Planning and Obstruction Prevention
 
 ### Table Of Contents
