@@ -1,8 +1,5 @@
 /*PROGRAM IN C++ */
 /// 21103226 Shardul Rastogi
-/// 21103288 Abhi Srivastava
-/// 21103292 Kulchandra Bhatt
-/// 21103292 Anup Ghimire
 #include <iostream>
 #include <climits>
 using namespace std;
